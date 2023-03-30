@@ -1,5 +1,6 @@
 FROM python:3.9-slim
 
+COPY requirements.txt /app/requirements.txt
 COPY App /app/App
 COPY Domain /app/Domain
 
