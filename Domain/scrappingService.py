@@ -16,7 +16,7 @@ async def scrapping(url:str):
     chrome_options = Options()
     chrome_options.add_argument('headless')
     chrome_options.add_argument('disable-translate')
-    driver = webdriver.Chrome('./Dependencies/chromedriver', options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     #receive url for scrapping
     driver.get(url)
