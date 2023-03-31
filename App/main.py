@@ -4,7 +4,7 @@ from Domain.scrappingService import scrapping
 
 app = FastAPI()
 
-@app.get("/scrapping_page/")
+@app.get("/scrapping_page")
 async def ScrappingPage(url: str):
     try:
         result = await scrapping(url)
