@@ -9,4 +9,4 @@ WORKDIR /app
 RUN pip install -U libsvm
 RUN pip install -r requirements.txt
 
-CMD ["uvicorn", "App.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "App.main:app", "--host", "0.0.0.0", "--port", "8080"]

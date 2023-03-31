@@ -1,0 +1,10 @@
+version: '1.0'
+name: my-app
+
+environments:
+  production:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 8080:8080
