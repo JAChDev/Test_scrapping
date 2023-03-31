@@ -7,9 +7,11 @@ from io import BytesIO
 from PIL import Image
 import langdetect
 import requests
+import pdb
 
 async def scrapping(url:str):
     print("comienza")
+    pdb.set_trace()
 
     chrome_options = Options()
     chrome_options.add_argument('headless')
@@ -18,6 +20,7 @@ async def scrapping(url:str):
 
     #receive url for scrapping
     driver.get(url)
+    pdb.set_trace()
 
     #validate language
     language = await Language(driver)
@@ -30,6 +33,7 @@ async def scrapping(url:str):
 
     #validate hd images
     hd = await ImagesValidate(driver)
+    pdb.set_trace()
     driver.quit()
 
     response = ""
